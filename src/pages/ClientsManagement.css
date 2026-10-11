@@ -1,0 +1,80 @@
+.client-page {
+  padding: 40px;
+  background: #f4f7fc;
+  min-height: 100vh;
+}
+
+.page-header h1 {
+  color: #132242;
+}
+
+.stats-card {
+  width: 250px;
+  background: #2563eb;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 25px 0;
+}
+
+.form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.form-card input {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+}
+
+.form-card button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.clients-section {
+  margin-top: 30px;
+}
+
+.client-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}

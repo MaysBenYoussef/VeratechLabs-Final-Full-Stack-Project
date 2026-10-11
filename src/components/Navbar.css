@@ -1,0 +1,275 @@
+.navbar {
+  background: #132242;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 30px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-text {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.nav-center {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.nav-center a:hover {
+  color: #818cf8;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-btn {
+  color: white;
+  border: 1px solid white;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.logo-text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+
+.register-btn {
+  background: #7c3aed;
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+
+.dashboard-btn {
+  background: #2563eb;
+
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+
+.request-btn {
+  background: #14b8a6;
+
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+
+.logout-btn {
+  border: none;
+
+  background: #ef4444;
+
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.manage-btn {
+  border: none;
+
+  background: #4338ca;
+
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+
+  position: absolute;
+
+  top: 45px;
+
+  right: 0;
+
+  background: white;
+
+  min-width: 220px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  display: block;
+
+  padding: 12px 18px;
+
+  color: #132242;
+
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #f3f4f6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.login-btn:hover,
+.register-btn:hover,
+.dashboard-btn:hover,
+.request-btn:hover,
+.logout-btn:hover,
+.manage-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-center {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.register-btn {
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #5b21b6
+  );
+
+  padding: 10px 18px;
+  border-radius: 8px;
+
+  color: white !important;
+
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+}
+
+.dashboard-btn {
+  background: #2563eb;
+
+  padding: 10px 18px;
+  border-radius: 8px;
+
+  color: white !important;
+}
+
+.logout-btn {
+  border: none;
+
+  background: #ef4444;
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

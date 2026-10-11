@@ -1,0 +1,22 @@
+import { Navigate } from "react-router-dom";
+
+function AdminRoute({ children }) {
+  const user = JSON.parse(
+    localStorage.getItem("user") || "null"
+  );
+
+  if (
+    user?.role?.toLowerCase() !== "admin"
+  ) {
+    return (
+      <Navigate
+        to="/dashboard"
+        replace
+      />
+    );
+  }
+
+  return children;
+}
+
+export default AdminRoute;
